@@ -16,12 +16,12 @@ router.get('/api/workouts', (req, res) => {
   Workout.find({})
     .sort({ date: -1 })
     .then((result) => {
-      result.forEach((workout, index) => {
+      result.forEach((workout) => {
         let total = 0;
         workout.exercises.forEach((exercise) => {
           total += exercise.duration;
         });
-        result[index].totalDuration = total;
+        workout.totalDuration = total;
       });
       res.json(result);
     })
