@@ -22,7 +22,6 @@ router.get('/api/workouts', (req, res) => {
           total += exercise.duration;
         });
         result[index].totalDuration = total;
-        console.log(workout);
       });
       res.json(result);
     })
@@ -32,7 +31,6 @@ router.get('/api/workouts', (req, res) => {
 });
 
 router.put('/api/workouts/:id', (req, res) => {
-  console.log(req.body);
   Workout.updateOne({ _id: req.params.id }, {
     $push: {
       exercises: req.body,
