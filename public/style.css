@@ -26,11 +26,16 @@ nav {
 }
 
 a,
-a:hover,
 a:active,
 a:visited {
+  padding: 1em;
   text-decoration: none;
   color: inherit;
+}
+a:hover {
+  background-color: linen;
+  color: blue;
+  font-weight: bold;
 }
 
 header {
