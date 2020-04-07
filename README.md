@@ -13,4 +13,4 @@ A consumer will reach their fitness goals quicker when they track their workout 
 ## Links
 
 * [Repository](https://github.com/CodeMaster-jab/FitnessTracker)
-* [Heroku Application](https://immense-wildwood-98172.herokuapp.com/)
+* [Heroku Application](https://infinite-depths-55438.herokuapp.com/)
